@@ -1,0 +1,184 @@
+
+:root {
+--tdp-primary:#1966b8;
+--tdp-secondary:#19c0b8;
+--tdp-black:#000;
+--tdp-white:#fff;
+--tdp-negative:#cc292b;
+--tdp-positive:#00a950;
+--tdp-warning:#f7d417;
+--tdp-grey:#616365;
+--tdp-light-grey:#b8c1cb;
+--tdp-font-weight-light:300;
+--tdp-font-weight-regular:400;
+--tdp-font-weight-semistrong:500;
+--tdp-font-weight-strong:bold;
+--tdp-font-primary:Domine, serif;
+--tdp-font-secondary:'Gothic A1',sans-serif;
+--tdp-ckan-dataset__resources__item--color: blue
+}
+/*
+--tdp-font-primary:rubik,sans-serif;
+--tdp-font-secondary:ibm-plex-serif,sans-serif
+*/
+
+@font-face
+  {
+  font-family:rubik;
+  src:url(../assets/fonts/Rubik/Rubik-Regular.eot);
+  src:url(../assets/fonts/Rubik/Rubik-Regular.woff2) format("woff2"),url(../assets/fonts/Rubik/Rubik-Regular.woff) format("woff"),url(../assets/fonts/Rubik/Rubik-Regular.ttf) format("truetype"),url(../assets/fonts/Rubik/Rubik-Regular.svg) format("svg")
+}
+
+@font-face {
+  font-family:"ibm-plex-serif";
+  src:url(../assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.eot);
+  src: url(../assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.woff2)  format("woff2"),url(../assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.woff) format("woff"),url(../assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.ttf) format("truetype"),url(../assets/fonts/IBM_Plex_Serif/IBMPlexSerif-Regular.svg) format("svg")
+}
+
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+html {
+  line-height:1.15;
+  -webkit-text-size-adjust:100%
+}
+body {
+  margin:0
+}
+a {
+  background-color:transparent
+}
+select { 
+  font-family:inherit;
+  font-size:100%;
+  line-height:1.15;
+  text-transform:none
+}
+h2,p,select,ul {
+  margin:0
+}
+ul {
+ list-style:none;
+ padding:0
+}
+html { 
+ font-family:rubik,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+ line-height:1.5
+}
+*,:after,:before {
+  -webkit-box-sizing:border-box;
+  box-sizing:border-box;
+  border:0 solid #e2e8f0
+}
+h2 {
+  font-size:inherit;
+  font-weight:inherit
+}
+a {
+  text-decoration:inherit;
+}
+a,select {
+  color: inherit
+}
+select {
+  padding:0;
+  line-height:inherit
+}
+.container {
+  width:100%
+}
+@media (min-width:640px){
+  .container{max-width:640px}
+}
+@media (min-width:768px){
+  .container{max-width:768px}
+}
+@media (min-width:1024px){
+  .container{max-width:1024px}
+}
+@media (min-width:1280px){
+  .container{max-width:1280px}
+}
+.bg-white {
+  background-color:#fff
+}
+.border-gray-200 {
+  border-color:#edf2f7
+}
+.rounded {
+  border-radius:.25rem
+}
+.rounded-lg {
+  border-radius:.5rem
+}
+.border-solid {
+  border-style:solid
+}
+.cursor-pointer {
+  cursor:pointer
+}
+.flex {
+  display:-ms-flexbox;
+  display:flex
+}
+.table-cell {
+  display:table-cell
+}
+.table-row {
+  display:table-row
+}
+.flex-col {
+  -ms-flex-direction:column;
+  flex-direction:column
+}
+.leading-tight {
+  line-height:1.25
+}
+.list-none {
+  list-style-type:none
+}
+.p-0 {
+  padding:0
+}
+.p-2 {
+  padding:.5rem
+}
+.p-6 {
+  padding:1.5rem
+}
+.pl-2 {
+  padding-left:.5rem
+}
+.shadow-lg {
+  -webkit-box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05);
+  box-shadow:0 10px 15px -3px rgba(0,0,0,.1),0 4px 6px -2px rgba(0,0,0,.05)
+}
+.table-auto {
+  table-layout:auto
+}
+.no-underline {
+  text-decoration: underline;
+}
+.antialiased {
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale
+}
+.select-none {
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none
+}
+.w-full {
+  width:100%
+}
+@media (min-width:768px) {
+  .md\:flex {
+    display:-ms-flexbox;
+    display:flex
+    }
+  .md\:m-3 {
+    margin:.75rem
+    }
+  .md\:w-1\/2 {
+    width:50%
+  }
+}

@@ -1,0 +1,207 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+  <!-- TDP standard fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Domine:wght@400;700&family=Gothic+A1:wght@300;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="styles/gmstyle.css">
+
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://greenmindsplymouth.com/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://greenmindsplymouth.com/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://greenmindsplymouth.com/favicon-16x16.png">
+
+  <title>Green Minds Data</title>
+</head>
+
+<body>
+
+  <header>
+
+    <div class="container-fluid">
+
+      <div class="row" id="head-top">
+
+
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="container-fluid">
+            <a class="navbar-brand justify-content-center" href="index.html"><img
+                src="https://greenmindsplymouth.com/assets/images/svg/green-minds-logo.svg" height=50
+                style="margin-right: 20px"><strong>Green Minds Data</strong></a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+              aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+              <ul class="navbar-nav mb-3 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="static.html">Static Data</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Real time Data</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="networks.html">Networks</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="datacat.html">Data Catalogue</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="about.html">About</a>
+                </li>
+              </ul>
+            </div>
+
+          </div>
+        </nav>
+
+      </div> <!-- end row -->
+
+    </div> <!-- end container -->
+
+  </header>
+
+
+  <main>
+    <div class="container-fluid">
+
+      <div class="container">
+
+        <div class="row align-items-center my-4">
+          <div class="col">
+            <img src="assets/realtime.png" width=80% />
+          </div>
+          <div class="col">
+            <h3>Real-time Data</h3>
+            <p>This page details data feeds from live sensors across the city, hosted on our real time data
+              infrastructure.</p>
+            <p>You can view a list of available dashboards here: <a
+                href="https://tick.thedata.place/grafana/">https://tick.thedata.place/grafana/</a></p>
+            <p>Our LoRaWAN network coverage map (pictured left) is here: <a
+                href="https://tick.thedata.place/map/">https://tick.thedata.place/map/</a></p>
+            <p>We also have historic footfall data for Devonport and Central Parks available here: <a
+                href="https://sandbox.thedata.place/footfall">https://sandbox.thedata.place/footfall</a></p>
+          </div>
+        </div>
+        <div class="row align-items-center my-4">
+          <div class="col">
+            <h3>Featured data</h3>
+            <p>Our colleagues at Plymouth University have been taking environmental measurements in Central Park since
+              the start of the project.</p>
+            <p>Here are a couple of real-time charts showing temperature and humidity at the Meadow Cafe in the centre
+              of the park.</p>
+            <p>There are a lot more over on our main Grafana hub: <a
+                href="https://tick.thedata.place/grafana/">https://tick.thedata.place/grafana/</a></p>
+          </div>
+          <div class="col">
+            <iframe
+              src="https://tick.thedata.place/grafana/d-solo/UQ9pL2SMz/environmental-data-central-park?orgId=1&refresh=1m&from=1653917602800&to=1654522402800&panelId=4"
+              frameborder="0" width=80% height="150"></iframe>
+            <iframe
+              src="https://tick.thedata.place/grafana/d-solo/UQ9pL2SMz/environmental-data-central-park?orgId=1&refresh=1m&from=1653918022551&to=1654522822551&panelId=10"
+              width=80% height="150" frameborder="0"></iframe>
+          </div>
+        </div>
+        <div class="row align-items-center my-4">
+          <div class="col">
+            <img src="assets/node-red.png" width=80% />
+          </div>
+          <div class="col">
+            <h3>Our infrastructure</h3>
+            <p>Data is collected using a range of sensors in green spaces across the city.</p>
+            <p>This is transmitted over a city-wide LoRaWAN network, via The Things Network gateways and into a Node-red
+              based processing engine.</p>
+            <p>Once captured, data is stored in a real-time database and displayed using Grafana dashboards.</p>
+          </div>
+        </div>
+        <div class="row align-items-center my-4">
+          <div class="col">
+            <h3>Get involved!</h3>
+            <p>If you're doing any kind of environmental measurements, citizen science or data collection and want to
+              pool your data with ours, we'd love to have you on board!</p>
+            <p>Get in touch with us here:</p>
+            <p><a href="https://thedata.place/contact/">https://www.thedata.place/contact</a></p>
+          </div>
+          <div class="col">
+            <iframe
+              src="https://tick.thedata.place/grafana/d-solo/ABIcbeVMk/defra-air-quality-city-centre-and-tavistock-road?orgId=1&from=1653919073686&to=1654523873686&panelId=2"
+              width=80% height="300" frameborder="0"></iframe>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <footer class="bd-footer py-4 py-md-5 mt-5 bg-light">
+    <div class="container">
+      <div class="row"><span class="fs-5">Created by: <a href="https://wwww.thedata.place"> <img
+              src="https://thedata.place/wp-content/uploads/2020/09/tdpforupload-3.png" height=50> The Data
+            Place</span></a>
+        <ul class="list-unstyled small text-muted">
+          <li class="mb-2">Code licensed <a href="https://github.com/twbs/bootstrap/blob/main/LICENSE" target="_blank"
+              rel="license noopener">MIT</a>, docs <a href="https://creativecommons.org/licenses/by/3.0/"
+              target="_blank" rel="license noopener">CC BY 3.0</a>. Data licensed as per individual datasets.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div><span class="fs-5">Green Minds Partners:</span></div>
+      </div>
+      <div class="row">
+        <div class="col-6 col-lg-2 mb-3 d-flex justify-content-center flex-wrap flex-row mx-auto" style="width: 1000px">
+          <div class="p-2 px-3"><img
+              src="https://www.devonwildlifetrust.org/sites/default/files/1_-DEVON_LOGO_PRIMARY_COLOUR2.png"
+              height=50><br /></div>
+          <div class="p-2 px-3"><img src="assets/realideas.png" height=75><br /></div>
+          <div class="p-2 px-3"><img src="assets/plymuni.svg" height=75><br /></div>
+          <div class="p-2 px-3"><img src="assets/nationaltrust.svg" height=75><br /></div>
+          <div class="p-2 px-3"><img src="assets/PCC.png" height=75><br /></div>
+          <div class="p-2 px-3"><img src="assets/pca-logo.jpeg" height=75<br /></div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div><span class="fs-5">Funded by:</span></div>
+      </div>
+      <div class="col-6 col-lg-2 mb-3 d-flex mx-auto" style="width: 850px">
+        <div class="p2 px-3">
+          <img src="assets/uia-eu-logo.png" height=80>
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+
+</body>
+
+</html>

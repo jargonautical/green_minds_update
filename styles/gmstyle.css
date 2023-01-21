@@ -1,0 +1,55 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+
+h1, h2, h3, h4, h5, .navbar-brand {
+  font-family: 'Domine', serif;
+}
+p, list-unstyled {
+  font-family: 'Gothic A1', sans-serif;
+}
+@media screen and (max-width: 667px) {
+    body {
+        overflow-x: hidden !important;
+    }
+    .container {
+        max-width: 100% !important;
+        overflow-x: hidden !important;
+        margin-left: 5px;
+    }
+}
+ 
+tdp-ckan-dataset .resources li a {
+  color: blue;
+  text-decoration: underline;
+}
+
+input #project_name {
+  width: 40%;
+}
+#map {
+  height: 500px;
+}
+#form-top {
+ margin-bottom: 10px;
+}
+#form-map {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  vertical-align: center;
+}
+#form-map .col {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+#form-bottom {
+  width: 60%;
+  margin-bottom: 20px;
+}
+#latlong {
+  display: none;
+}
+ul {
+  list-style-type: none;
+}

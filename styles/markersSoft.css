@@ -1,0 +1,23 @@
+.markerPlace {
+  background-image: url('../assets/markerSoft1.svg');
+  /*background-image: url('assets/Place.png');*/
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  border-radius: 5%;
+  cursor: pointer;
+}
+.markerOrg {
+  background-image: url('../assets/markerSoft2.svg');
+  background-size: 'cover';
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
+.markerProject {
+  background-image: url('../assets/markerSoft3.svg');
+  background-size: cover;
+  width: 20px;
+  height: 40px;
+  cursor: pointer;
+}
